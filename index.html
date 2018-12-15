@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+   <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html"><img class="im1 img responsive" src="home-icon-blue-png-5.png">Home</a>
+  <a href="login.php"><img class="im1 img responsive" src="Man.png">Login</a>
+  <a href="signup.php"><img class="im1 img responsive" src="addnew.png">SignUp</a>
+  <a href="#"><img class="im1 img responsive" src="info.png">About</a>
+  <a href="#"><img class="im1 img responsive" src="version.png">Version</a>
+</div>
+
+
+<div id="main">
+  
+  <span class="spn" style="font-size:30px;cursor:pointer;color: white;" onclick="openNav()">&#9776; open</span>
+  
+</div>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+}
+</script>
+    </body>
+</html>
